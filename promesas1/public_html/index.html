@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Promesas en JS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="promesas.js"></script> 
+    </head>
+    <body>
+        <div><h2>Ejecutando Promesa</h2></div>
+        
+        <form name="Formulario" id="Formulario">            
+            <label for="Verdadero">Promesa con éxito</label>
+            <input type="radio" name="VerdaderoFalso" id="Verdadero" value="Exito">
+            <br>
+            <label for="Falso">Promesa con error</label>
+            <input type="radio" name="VerdaderoFalso" id="Falso" value="Error">
+            <br>
+            <input type="button" id="Boton1" Value="EjecutarPromesa sola" onclick="PromesaSola(document.getElementById('Formulario'))">
+            <br>
+            <input type="button" id="Boton2" Value="EjecutarPromesa anidada" onclick="PromesaAnidada(document.getElementById('Formulario'))">
+            <br>
+            <input type="button" id="Boton2" Value="EjecutarPromesa retorna datos" onclick="PromesaDato(document.getElementById('Formulario'))">
+            <br><br>
+            <h2>Promesa y AJAX</h2>
+            <br>
+            <input type="button" id="Boton2" Value="EjecutarPromesa retorna datos" onclick="EjecutarAJAX()">
+            <br>
+            <input type="text" name="json" id="json" size="40">
+        </form>
+    </body>
+</html>
